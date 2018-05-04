@@ -1,0 +1,17 @@
+version: '3'
+services:
+  db:
+    image: mysql:8.0.2
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: graphql
+    ports:
+      - 3306:3306
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+#  graphql:
+#    image: node:9.11.1
+#    depends_on: db
+    
