@@ -3,9 +3,9 @@ const knex = require('knex')(knexfile)
 module.exports = knex
 
 // knex('users').insert({
-//     name: 'Teste',
-//     email: 'teste@teste.com.br',
-//     password: 'teste'
+//      name: 'Rodrigo',
+//      email: 'rodrigo@teste.com.br',
+//      password: 'rodrigo'
 // }).then(data => console.log(data))
 
-// knex('users').then(resultado => console.log(resultado))
+// knex('users').where({id:3}).then(resultado => console.log(resultado))
