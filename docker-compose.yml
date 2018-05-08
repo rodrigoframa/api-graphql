@@ -17,7 +17,9 @@ services:
       - ./src:/graphql/src
     ports:
       - 4000:4000
-    command: node server
+    command: bash -c "cd src && node server"
     depends_on: 
       - db
     
+
+# cd src && npx knex migrate:latest
