@@ -11,7 +11,13 @@ services:
     image: adminer
     ports:
       - 8080:8080
-#  graphql:
-#    image: node:9.11.1
-#    depends_on: db
+  graphql:
+    build: .
+    volumes: 
+      - ./src:/graphql/src
+    ports:
+      - 4000:4000
+    command: node server
+    depends_on: 
+      - db
     

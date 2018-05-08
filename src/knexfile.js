@@ -4,7 +4,7 @@ const { password } = require('./.env')
 module.exports = { 
     client: 'mysql',
     connection: {
-      host: '127.0.0.1',
+      host: 'db',
       database: 'graphql',
       user:     'root',
       password
